@@ -16,8 +16,11 @@ then
 	echo 'El script ' $nFile ' ya existe'
 else
 	touch /home/$USER/$nFile.sh
+ 
 	echo '#!/bin/bash' >> $nFile.sh
 	echo '#' >> $nFile.sh
 	echo '# Autor: '$USER' '$(date +%d/%m/%Y) >> $nFile.sh
 	echo '###########################' >> $nFile.sh
+
+ 	chmod 700 $nFile.sh
 fi
