@@ -1,0 +1,13 @@
+[Unit]
+Description=Ejercicio de dependencias este servicio depende de la dependenciaA
+After=dependenciaA.service
+Requires=dependenciaA.service
+
+[Service]
+ExecStart=/home/dark869/Documentos/Repositorios/administracion-de-servidores/servicios/depenA.sh
+Type=oneshot
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target graphical.target

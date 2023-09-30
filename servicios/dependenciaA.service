@@ -1,0 +1,11 @@
+[Unit]
+Description=Practica dependencias requiere la dependencia B antes de iniciarse
+
+[Service]
+ExecStart=/home/dark869/Documentos/Repositorios/administracion-de-servidores/servicios/depenA.sh
+Type=oneshot
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target graphical.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Script que genera un registro con su fecha y hora en /var/log/mi-log.log
+
+[Service]
+ExecStart=/home/dark869/Documentos/Repositorios/administracion-de-servidores/servicios/generateLog.sh
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target graphical.target

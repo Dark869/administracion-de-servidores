@@ -1,0 +1,9 @@
+[Unit]
+Description=Temporizador que ejecuta el mi-log.service cada 5 minutos
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=multi-user.target graphical.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Servicio limitado por cpu
+
+[Service]
+ExecStart=/home/dark869/Documentos/Repositorios/administracion-de-servidores/servicios/restRecursos.sh
+CPUQuota=10%
+Restart=always
+
+[Install]
+WantedBy=multi-user.target graphical.target
